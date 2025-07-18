@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 98.5%;
+    height: 60vh;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('https://t3.ftcdn.net/jpg/07/58/26/62/360_F_758266271_yksdY7RLYIIY6jofjJorjylEDOvgcuze.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.name{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: italic;
+    font-weight: bold;
+}
+
+.error{
+    margin: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.search .search-bar{
+    width: 400px;
+    height: 60px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.search-bar:focus{
+    box-shadow:  0 0 8px #007BFF;
+    border: 1px solid #007BFF;
+}
+
+.search .search-button{
+    width: 80px;
+    height: 60px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+}
+
+.search-button:hover{
+    background-color: #204622;
+    color: white;
+    transition: ease 0.3s;
+}
+
+@media (max-width:600px) 
+{
+ .search .search-bar{
+    width: 200px;
+    height: 40px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+ }   
+
+ .search .search-button{
+    width: 60px;
+    height: 40px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+}
